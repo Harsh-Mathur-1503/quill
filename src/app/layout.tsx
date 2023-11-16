@@ -9,8 +9,8 @@ import Providers from '@/components/Providers';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Opio',
-  description: 'A Reddit clone built with Next.js and TypeScript.',
+  title: 'Crill',
+  description: 'A discussion website built with Next.js and TypeScript.',
 };
 
 export default function RootLayout({

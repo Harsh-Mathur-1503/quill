@@ -1,13 +1,13 @@
-import { FC } from 'react'
 import { getAuthSession } from '@/lib/auth'
 import {db} from '@/lib/db'
 import { INFINITE_SCROLL_PAGINATION_RESULTS } from '@/config'
 import { notFound } from 'next/navigation'
 import MiniCreatePost from '@/components/MiniCreatePost'
+import PostFeed from '@/components/PostFeed'
 interface PageProps {
-  params:{
-    slug:string
-  }
+  params: {
+    slug: string;
+  };
 }
 
 const page = async({params}:PageProps) => {
@@ -27,6 +27,9 @@ const page = async({params}:PageProps) => {
                     comments:true,
                     subreddit:true,
                 },
+                orderBy:{
+                  createdAt:'desc'
+                },
                 take:INFINITE_SCROLL_PAGINATION_RESULTS,
             }
         }
@@ -41,6 +44,7 @@ const page = async({params}:PageProps) => {
     </h1>
     <MiniCreatePost session={session} />
     {/* show posts in your feed */}
+    <PostFeed initialPosts={subreddit.posts} subredditName={subreddit.name} />
     </>
   )
 }

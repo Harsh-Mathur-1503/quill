@@ -20,8 +20,6 @@ export async function POST(req: Request) {
       if (validationError instanceof z.ZodError) {
         return new Response(validationError.message, { status: 422 });
       } else {
-        // Log unexpected validation errors
-        console.error('Unexpected validation error:', validationError);
         return new Response('Could not create subreddit', { status: 500 });
       }
     }
@@ -57,8 +55,6 @@ export async function POST(req: Request) {
 
     return new Response(subreddit.name);
   } catch (error) {
-    // Log unexpected errors
-    console.error('Unexpected error:', error);
     return new Response('Could not create subreddit', { status: 500 });
   }
 }
