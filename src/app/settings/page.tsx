@@ -22,7 +22,9 @@ if(!session) {
     </div>
     <div className='grid gap-10'>
         <UserNameForm user={{
+            // @ts-ignore
             id:session.user.id,
+            // @ts-ignore
             username:session.user.username || '',
         }} />
     </div>
