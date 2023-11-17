@@ -15,7 +15,7 @@ const SignIn = () => {
       {/* sign-in form */}
       <UserAuthForm />
       <p className="px-8 text-center text-sm text-muted-foreground text-zinc-700">
-        New to Opio?{' '}
+        New to Crill?{' '}
         <Link
           href="/sign-up"
           className="hover:text-zinc-800 hover:text-brand text-sm underline underline-offset-4"
