@@ -70,20 +70,6 @@ This project is a discussion website where registered users can submit various t
 6. **Access the application**:
     Open your browser and navigate to `http://localhost:3000`.
 
-## Project Structure
-- ├── public # Static files
-├── src
-│ ├── components # React components
-│ ├── pages # Next.js pages
-│ ├── styles # CSS/Sass files
-│ ├── utils # Utility functions
-│ └── services # API services
-├── prisma
-│ └── schema.prisma # Prisma schema
-├── .env # Environment variables
-├── package.json # NPM scripts and dependencies
-└── README.md # Project documentation
-
 
 
 ## Usage
