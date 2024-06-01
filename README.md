@@ -39,8 +39,8 @@ This project is a discussion website where registered users can submit various t
 ### Installation
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/discussion-website.git
-    cd discussion-website
+    git clone [https://github.com/your-username/discussion-website.git](https://github.com/Harsh-Mathur-1503/crill.git)
+    cd crill
     ```
 
 2. **Install dependencies**:
@@ -71,7 +71,7 @@ This project is a discussion website where registered users can submit various t
     Open your browser and navigate to `http://localhost:3000`.
 
 ## Project Structure
-├── public # Static files
+- ├── public # Static files
 ├── src
 │ ├── components # React components
 │ ├── pages # Next.js pages
